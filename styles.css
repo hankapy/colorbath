@@ -1,0 +1,95 @@
+/* Muuttujat */
+:root {
+    --primary-font: Arial, sans-serif;
+    --secondary-font: 'Times New Roman', serif;
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+/* Yleiset tyylit */
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column; /* Pystysuuntainen asettelu */
+    align-items: center; /* Keskitetään kaikki sisällöt */
+    padding: 20px; /* Lisää tilaa sivun reunoille */
+}
+
+/* Asetukset ja alasvetovalikot */
+.settings {
+    margin-bottom: 20px;
+    width: 500px; /* Leveämpi asetus valikoille */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Varjo valikoiden ympärille */
+    padding: 20px; /* Sisätilaa valikolle */
+    border-radius: 8px; /* Pyöristetyt kulmat */
+    display: grid; /* Käytetään ruudukkoa asetteluun */
+    grid-template-columns: repeat(3, 1fr); /* Kolme yhtä leveää saraketta */
+    gap: 15px; /* Välit alasvetovalikoiden välillä */
+}
+
+/* Esimerkkiboksit */
+.example-boxes {
+    display: flex;
+    flex-direction: column; /* Pystysuuntainen asettelu */
+    gap: 20px; /* Välit esimerkkiboksien välillä */
+    width: 80%; /* Suurempi leveys boksille */
+}
+
+.example-box {
+    padding: 40px; /* Lisää tilaa elementtien ympärille (suurempi) */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Pyöristetyt kulmat */
+    background-color: var(--secondary-color);
+    min-height: 200px; /* Minim korkeus, jotta boksit ovat suurempia */
+}
+
+.inverted {
+    color: #fff; /* Otsikon ja tekstin väri */
+    background-color: #000; /* Taustaväri */
+}
+
+/* Otsikot */
+.example-title {
+    font-size: 24px; /* Suurennetaan otsikon kokoa */
+}
+
+.example-title:nth-child(2) {
+    font-size: 20px; /* Keskikokoinen otsikko */
+}
+
+.example-title:nth-child(3) {
+    font-size: 16px; /* Pienempi otsikko */
+}
+
+/* Teksti */
+.example-text {
+    font-size: 16px;
+}
+
+/* Painikkeet */
+.accent-button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px; /* Lisää tilaa painikkeiden ja tekstin väliin */
+}
+
+.accent-button:hover {
+    background-color: darkblue; /* Tummempi väri hover-tilassa */
+}
+
+/* Alasvetovalikkojen tyyli */
+select {
+    padding: 10px; /* Lisää tilaa alasvetovalikoille */
+    margin: 10px 0; /* Välit alasvetovalikoiden ympärillä */
+    border-radius: 5px; /* Pyöristetyt kulmat */
+    border: 1px solid #ccc; /* Kehys alasvetovalikoille */
+    font-size: 16px; /* Suurennetaan fonttikokoa */
+    width: 100%; /* Tehdään alasvetovalikoista täysleveyksiä */
+    box-sizing: border-box; /* Varmistaa, että padding lasketaan mukaan leveyteen */
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Värikylpy - Esimerkkisivusto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tervetuloa värikylpyyn!</h1>
+    <p>
+        Tässä on tekstiehdotus, joka selittää lyhyesti sivuston tarkoituksen:
+        Tämä sivusto toimii esimerkkinä ja apuvälineenä sinulle, joka suunnittelet omaa verkkosivuasi.
+        Tarkoituksena on auttaa sinua löytämään mieluisat väri- ja fonttiyhdistelmät, jotka vastaavat
+        parhaiten visuaalisia tarpeitasi. Voit kokeilla eri teemoja ja tyylejä muokkaamalla sivun ulkoasua
+        helposti alasvetovalikoiden kautta.
+    </p>
+
+    <div class="settings">
+        <div class="fonts">
+            <label for="font-title">Otsikkofontti:</label>
+            <select id="font-title">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Montserrat">Montserrat</option>
+            </select>
+
+            <label for="font-text">Tekstifontti:</label>
+            <select id="font-text">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Montserrat">Montserrat</option>
+            </select>
+        </div>
+
+        <div class="colors">
+            <label for="primary-color">Pääväri 1:</label>
+            <select id="primary-color">
+                <option value="#000">Musta</option>
+                <option value="#fff">Valkoinen</option>
+                <option value="#333">Tummanharmaa</option>
+            </select>
+
+            <label for="secondary-color">Taustaväri:</label>
+            <select id="secondary-color">
+                <option value="#f0f0f0">Haapa</option>
+                <option value="#e0e0e0">Vaaleanharmaa</option>
+                <option value="#f5f5f5">Hieman tummempi harmaa</option>
+            </select>
+        </div>
+
+        <div class="accent-colors">
+            <label for="accent-color1">Korostusväri 1:</label>
+            <select id="accent-color1">
+                <option value="#007bff">Sininen</option>
+                <option value="#ff0000">Punainen</option>
+                <option value="#ff9800">Oranssi</option>
+            </select>
+
+            <label for="accent-color2">Korostusväri 2:</label>
+            <select id="accent-color2">
+                <option value="#007bff">Sininen</option>
+                <option value="#ff0000">Punainen</option>
+                <option value="#ff9800">Oranssi</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="example-boxes">
+        <div class="example-box">
+            <div class="example-title">Esimerkkiotsikko 1</div>
+            <div class="example-title">Esimerkkiotsikko 2</div>
+            <div class="example-title">Esimerkkiotsikko 3</div>
+            <div class="example-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</div>
+            <button class="accent-button">Painike 1</button>
+            <button class="accent-button">Painike 2</button>
+        </div>
+
+        <div class="example-box inverted">
+            <div class="example-title">Esimerkkiotsikko 1</div>
+            <div class="example-title">Esimerkkiotsikko 2</div>
+            <div class="example-title">Esimerkkiotsikko 3</div>
+            <div class="example-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</div>
+            <button class="accent-button">Painike 1</button>
+            <button class="accent-button">Painike 2</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
